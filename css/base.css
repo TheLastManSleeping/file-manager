@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #f5f5dc;
+    --header-color: #8A2BE2;
+    --footer-color: #8A2BE2;
+    --button-hover-color: #E0B475;
+    --header-button-hover-color: #9370DB;
+    --app-name-color: #FFFFFF;
+    --app-name-hover-color: #f5f5dc;
+    --button-color: #8A2BE2;
+}
+
+body{
+    background: var(--main-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--header-color);
+    border-radius: 30px;
+}
+
+header a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: background-color 0.5s;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.app-name {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--app-name-color);
+    transition: color 0.5s;
+
+}
+
+.app-name:hover {
+    background-color: var(--header-color);
+    color: var(--app-name-hover-color);
+    box-shadow: none;
+    font-size: 2.0em;
+}
+
+.header-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a:hover {
+    background-color: var(--header-button-hover-color);
+    color: white;
+    box-shadow: 0 0 3pt 2pt #8A2BE2;
+    border-radius: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    bottom: 5px;
+    background-color: var(--footer-color);
+    color: #ffffff;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-contact {
+    color: #ffffff;
+}
+
+.footer-contact:hover {
+    transition: 0.5s;
+    color: #f5f5dc;
+}
+
+button {
+    height: 30px;
+
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background-color: var(--button-color);
+    transition: 0.5s;
+
+}
+
+
+button:hover{
+    background-color: var(--header-button-hover-color);
+    color: white;
+    box-shadow: 0 0 3pt 2pt #8A2BE2;
+    border-radius: 30px;
+}
+
+button:active, .upload-button:focus{
+    outline: 0;
+}
