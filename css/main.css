@@ -1,0 +1,16 @@
+img {
+    border-radius: 20%;
+    padding: 5px;
+    width: 150px;
+}
+
+.article-data{
+    display: flex;
+    justify-content: start;
+}
+
+figure{
+    box-shadow: 0 0 3pt 2pt #8A2BE2;
+    padding: 5px;
+    border-radius: 10px;
+}
